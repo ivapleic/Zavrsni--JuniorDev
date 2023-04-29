@@ -12,23 +12,24 @@ function NavBar() {
   return (
     <div className="header">
       <div className="inner">
-      <div  className="nav-bar"> 
-          <a href="google.com">O nama</a>
+        <div className="nav-bar">
+        <a href="google.com">Unos</a>
           <a href="google.com">Popis</a>
+          <a href="google.com">O nama</a>
+          <img src="src\assets\dog-cat.jpg" className="logo" />
           <a href="google.com">Donacije</a>
           <a href="google.com">Obavijesti</a>
-       </div>
-      <div className="user-role">
-      <label className="switch">
-        <input
-          type="checkbox"
-          checked={userRole === "admin"}
-          onChange={handleUserRoleChange}
-        />
-        <span className="slider round">Admin</span>
-      </label> 
-      </div>
-
+        </div>
+        <div className="user-role">
+          <label className="switch">
+            <input
+              type="checkbox"
+              checked={userRole === "admin"}
+              onChange={handleUserRoleChange}
+            />
+            <span className="slider round">Admin</span>
+          </label>
+        </div>
       </div>
     </div>
   );
