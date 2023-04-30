@@ -4,7 +4,7 @@ function AdminPage() {
   return (
     <div className="admin-user">
         <NavBar />
-      <h1>Welcome, admin!</h1>
+       <h1>Welcome, admin!</h1>
     </div>
   );
 }

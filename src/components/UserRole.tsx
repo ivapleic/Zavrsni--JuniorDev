@@ -1,5 +1,8 @@
-import {createContext} from 'react'
- 
-const UserRoleContext = createContext('user');
- 
-export default UserRoleContext
+import { createContext } from "react";
+
+const UserRoleContext = createContext({
+  userRole: "user",
+  setUserRole: () => {},
+});
+
+export default UserRoleContext;
