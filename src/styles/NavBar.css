@@ -4,11 +4,11 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  position: fixed;
+   position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
-  /* z-index: 100; */
+   z-index: 100; 
 }
 
 .inner {
@@ -19,7 +19,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items:center;
-  margin: 0 2em;
+  padding: 0 1rem;
 }
 
 .nav-bar {

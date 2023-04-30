@@ -14,11 +14,12 @@ function NavBar() {
     <div className="header">
       <div className="inner">
         <div className="nav-bar">
-          <Link to="/animals">Popis</Link>
           <Link to="/about-us">O nama</Link>
+          <Link to="/animals">Popis</Link>
           <img src="src\assets\dog-cat.jpg" className="logo" alt="logo" />
           <Link to="/donations">Donacije</Link>
           <Link to="/notifications">Obavijesti</Link>
+          {userRole === "admin" && <Link to="/add-new">Dodaj novog</Link>}
         </div>
         <div className="user-role">
           <label className="switch">

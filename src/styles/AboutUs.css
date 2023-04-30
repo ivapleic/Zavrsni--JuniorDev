@@ -1,5 +1,31 @@
 .about-us {
-    height: 100%;
-    width: 80%;
-     background-color: white;
+  height: 100%;
+  width: 90%;
+  background-color: white;
+  margin: 6rem 1rem;
+  border-radius: 10px;
+}
+
+.about-us img {
+  height: 10%;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  margin:5% 0;
+  
+}
+
+.image {
+  height: 100%;
+  width: 50%;
+  margin: 0 2%;
+}
+
+.text {
+  height: 100%;
+  width: 50%;
+  margin: 0 2%;
 }
