@@ -6,7 +6,7 @@ import "../styles/NavBar.css";
 function NavBar() {
   const { userRole, setUserRole } = useContext(UserRoleContext);
 
-  function handleUserRoleChange(event) {
+  function handleUserRoleChange(event:any) {
     setUserRole(event.target.checked ? "admin" : "user");
   }
 

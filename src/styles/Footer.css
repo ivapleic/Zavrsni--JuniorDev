@@ -1,0 +1,28 @@
+.footer {
+    background-color: rgb(255, 255, 255);
+    height: 20%;
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-footer {
+    width:60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 1rem;
+}
+
+.link {
+    color: black;
+}
+
+.link:hover {
+    border-bottom: 1px solid black;
+    color: black;
+  }

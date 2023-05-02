@@ -1,4 +1,5 @@
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 import AboutUs from "../pages/AboutUs";
 import Donations from "../pages/Donations";
 import Notifications from "../pages/Notifications";
@@ -19,6 +20,7 @@ function UserPage() {
         <Route path="/animals" element={<Animals />} />
       </Routes>
     </div>
+    <Footer />
     </div>
   );
 }

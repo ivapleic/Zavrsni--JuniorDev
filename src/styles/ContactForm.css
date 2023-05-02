@@ -1,0 +1,50 @@
+.contact-form {
+    height: 100%;
+    min-height: 350px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 2% 0;
+}
+
+.name-email {
+    min-height: 200px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3% 0;
+}
+
+.name-email input {
+    width: 40%;
+    min-height: 30px;
+    font-size: 15px;
+}
+
+.msg {
+    min-height: 150px;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.msg textarea {
+    width: 50%;
+    height: 100px;
+    font-size: 18px;
+}
+
+.submit-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
