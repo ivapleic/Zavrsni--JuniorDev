@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/ContactForm.css";
+import axios from "axios";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -15,63 +16,23 @@ function ContactForm() {
     });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
-    console.log(
-      `Full Name: ${formData.fullName}\nEmail: ${formData.mail}\nMessage: ${formData.message}`
-    );
-  };
-
-  function formatData(object:any) {
-    return {
-        
-            fullName: object.fullName,
-            mail: object.mail,
-            message: object.message
-        
-    };
-}
-
-
-const sendData = async (event:any) => {
-    event.preventDefault();
-    const messageInput = document.getElementById('message-input');
-    formData.message = formData.message.value;
-    messageInput.value='';
-
-    const toSend = formatData(formData);
-    await axios.post("/poruke", zaSlanje);
-
-    const rezultat = await axios.get("/poruke");
-    postaviPoruke(rezultat.data);
-    postaviPodatke(
+    try {
+      const response = await axios.post(
+        "http://localhost:3002/messages",
+        formData,
         {
-        ime: "",
-        prezime: "",
-        mail: "",
-        poruke: ""
-    })
-};
-
-const promjenaUlaza = (event) => {
-    const { name, value } = event.target;
-
-    postaviPodatke({ ...formaPodaci, [name]: value });
-};
-
-// const [poruka, saljiPoruku] = useState(false); 
-// const  [ime, postaviIme] = useState("");
-// const [imee, promjenaImena] = useState(false);
-// const promjenaUlaza = (event) => {
-//     const { ime } = event.target;
-
-//     postaviPodatke({ ...formaPodaci, [ime]: value });
-// };
-
-
-
-
-
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return (
     <form onSubmit={handleSubmit} className="contact-form">

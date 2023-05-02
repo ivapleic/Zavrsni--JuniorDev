@@ -1,0 +1,36 @@
+.animal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightblue;
+    width: 25%;
+    margin: 2% 2%;
+
+}
+.animal-img {
+    width:100%;
+    height: 250px;
+}
+
+.animal-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.animal-years {
+    display: flex;
+    flex-direction: row;
+}
+.animal-type {
+    display: flex;
+    flex-direction: row;
+}
+
+.animal-description {
+    display: flex;
+    flex-direction: row;
+}
+
+.animal-card p {
+    margin: 10px 3px;
+}

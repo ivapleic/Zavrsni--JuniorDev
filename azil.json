@@ -41,23 +41,83 @@
     "zivotinje": [
         {
             "id": 1,
-            "ime": "Garfield",
-            "vrsta": "mačka",
-            "cip": false,
-            "godine": 44,
-            "opis": "Voli lazanje",
-            "pregled": "2022-09-23",
-            "udomljen": true
+            "name": "Garfield",
+            "type": "mačka",
+            "chip": false,
+            "years": 44,
+            "description": "Voli lazanje",
+            "examination": "2022-09-23",
+            "adopted": true
         },
         {
             "id": 2,
-            "ime": "Snoopy",
-            "vrsta": "pas",
-            "cip": true,
-            "godine": 50,
-            "opis": "Više od običnog psa",
-            "pregled": "2000-02-13",
-            "udomljen": false
+            "name": "Snoopy",
+            "type": "pas",
+            "chip": true,
+            "years": 50,
+            "description": "Više od običnog psa",
+            "examination": "2000-02-13",
+            "adopted": false
+        },
+        {
+            "id": 1,
+            "name": "Garfield",
+            "type": "mačka",
+            "chip": false,
+            "years": 44,
+            "description": "Voli lazanje",
+            "examination": "2022-09-23",
+            "adopted": true
+        },
+        {
+            "id": 2,
+            "name": "Snoopy",
+            "type": "pas",
+            "chip": true,
+            "years": 50,
+            "description": "Više od običnog psa",
+            "examination": "2000-02-13",
+            "adopted": false
+        },
+        {
+            "id": 1,
+            "name": "Garfield",
+            "type": "mačka",
+            "chip": false,
+            "years": 44,
+            "description": "Voli lazanje",
+            "examination": "2022-09-23",
+            "adopted": true
+        },
+        {
+            "id": 2,
+            "name": "Snoopy",
+            "type": "pas",
+            "chip": true,
+            "years": 50,
+            "description": "Više od običnog psa",
+            "examination": "2000-02-13",
+            "adopted": false
+        },
+        {
+            "id": 1,
+            "name": "Garfield",
+            "type": "mačka",
+            "chip": false,
+            "years": 44,
+            "description": "Voli lazanje",
+            "examination": "2022-09-23",
+            "adopted": true
+        },
+        {
+            "id": 2,
+            "name": "Snoopy",
+            "type": "pas",
+            "chip": true,
+            "years": 50,
+            "description": "Više od običnog psa",
+            "examination": "2000-02-13",
+            "adopted": false
         }
     ]
 }

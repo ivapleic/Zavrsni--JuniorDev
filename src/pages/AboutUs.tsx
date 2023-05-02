@@ -37,18 +37,26 @@ function AboutUs() {
       <div className="contact-location">
         <div className="contact">
           <h2>KONTAKT</h2>
-          <p><b>Azil za zivotinje Beštie</b></p>
-          <p><b>Adresa</b> : Vukovarska 1, 21312 Split</p>
-          <p><b>Telefon </b>: 021 333 555</p>
-          <p><b>Email </b>: azilzazivotinje@gmail.com</p>
+          <p>
+            <b>Azil za zivotinje Beštie</b>
+          </p>
+          <p>
+            <b>Adresa</b> : Vukovarska 1, 21312 Split
+          </p>
+          <p>
+            <b>Telefon </b>: 021 333 555
+          </p>
+          <p>
+            <b>Email </b>: azilzazivotinje@gmail.com
+          </p>
         </div>
         <div className="location">
           <MapLocation />
         </div>
       </div>
       <div className="form">
-          <ContactForm />
-        </div>
+        <ContactForm />
+      </div>
     </div>
   );
 }

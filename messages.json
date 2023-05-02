@@ -1,0 +1,16 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "fullName": "Iva Pleic",
+      "mail": "ipleic46@gmail.com",
+      "message": "Hello World!"
+    },
+    {
+      "fullName": "Ivan Penava",
+      "mail": "ipenialoe@gmail.com",
+      "message": "A neka poruka ide ode!",
+      "id": 2
+    }
+  ]
+}
