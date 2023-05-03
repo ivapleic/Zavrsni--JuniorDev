@@ -1,36 +1,41 @@
-.animal-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: lightblue;
-    width: 25%;
-    margin: 2% 2%;
-
-}
-.animal-img {
-    width:100%;
-    height: 250px;
+.animal-img,
+.animal-img img {
+  width: 100%;
+  height: 260px;
 }
 
-.animal-img img{
-    height: 100%;
-    width: 100%;
+.animal-card,
+.additional-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightblue;
+  width: 25%;
+  margin: 2% 2%;
+  min-height: 450px;
+  max-height: 5050px;
 }
 
-.animal-years {
-    display: flex;
-    flex-direction: row;
-}
-.animal-type {
-    display: flex;
-    flex-direction: row;
-}
-
-.animal-description {
-    display: flex;
-    flex-direction: row;
+.animal-years,
+.animal-type,
+.animal-description,
+.animal-adopted,
+.animal-gender,
+.animal-examination,
+.animal-chip {
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
 }
 
 .animal-card p {
-    margin: 10px 3px;
+  margin: 10px 3px;
+}
+
+.animal-chip {
+  flex-wrap: nowrap;
+}
+
+.animal-more-info-btn {
+  margin: 5% 0;
 }

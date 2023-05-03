@@ -6,6 +6,7 @@ import Animals from "../pages/Animals";
 import AddNew from "../pages/AddNew";
 import { Routes, Route } from 'react-router-dom';
 import '../styles/UserPage.css';
+import Footer from "./Footer";
 
 function AdminPage() {
   return (
@@ -21,6 +22,7 @@ function AdminPage() {
         <Route path="/add-new" element={<AddNew />} />
       </Routes>
     </div>
+    <Footer />
     </div>
   );
 }

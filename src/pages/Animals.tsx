@@ -7,32 +7,46 @@ function Animals() {
   const [animals, setAnimals] = useState([]);
   const [selectedType, setSelectedType] = useState("");
   const [selectedGender, setSelectedGender] = useState("");
-  const [selectedAdoptionStatus, setSelectedAdoptionStatus] = useState(false);
+  const [selectedAdoptionStatus, setSelectedAdoptionStatus] = useState(null);
 
   useEffect(() => {
     fetch("http://localhost:3003/zivotinje")
       .then((response) => response.json())
-      .then((data) => setAnimals(data))
+      .then((data) => {
+        setAnimals(data);
+      })
       .catch((error) => console.log(error));
   }, []);
+
+  const filteredAnimals = animals.filter((animal) => {
+    if (
+      (selectedType && animal.type !== selectedType) ||
+      (selectedGender && animal.gender !== selectedGender) ||
+      (selectedAdoptionStatus &&
+        animal.adopted.toString() !== selectedAdoptionStatus)
+    ) {
+      return false;
+    }
+    return true;
+  });
 
   return (
     <div className="animals">
       <h1>Naše životinje</h1>
       <AnimalFilters
-        type={selectedType}
+        selectedType={selectedType}
         setSelectedType={setSelectedType}
-        gender={selectedGender}
+        selectedGender={selectedGender}
         setSelectedGender={setSelectedGender}
-        adopted={selectedAdoptionStatus}
+        selectedAdoptionStatus={selectedAdoptionStatus}
         setSelectedAdoptionStatus={setSelectedAdoptionStatus}
       />
       <div className="animals-cards">
-        {animals.map((animal) => (
-          <AnimalCard key={animal.id} animal={animal} />
-        ))}
+          {filteredAnimals.map((animal) => (
+            <AnimalCard key={animal.id} animal={animal} />
+          ))}
+        </div>
       </div>
-    </div>
   );
 }
 
