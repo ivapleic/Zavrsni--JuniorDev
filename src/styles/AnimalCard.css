@@ -4,16 +4,15 @@
   height: 260px;
 }
 
-.animal-card,
-.additional-information {
+.animal-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightblue;
   width: 25%;
   margin: 2% 2%;
-  min-height: 450px;
-  max-height: 5050px;
+  min-height: 400px;
+  max-height: 550px;
+  background-color: lightgrey;
 }
 
 .animal-years,
@@ -26,14 +25,13 @@
   display: flex;
   flex-direction: row;
   margin: 1%;
+  width: 100%;
+  justify-content: center;
+  padding: 0;
 }
 
 .animal-card p {
   margin: 10px 3px;
-}
-
-.animal-chip {
-  flex-wrap: nowrap;
 }
 
 .animal-more-info-btn {

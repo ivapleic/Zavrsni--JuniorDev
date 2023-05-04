@@ -14,9 +14,6 @@ function AnimalCard({ animal }: any) {
     <div className="animal-card">
       {showMoreInfo ? (
         <div className="additional-information">
-          <button className="animal-more-info-btn" onClick={toggleMoreInfo}>
-            Nazad
-          </button>
           <h2>{name}</h2>
           <div className="animal-more-info-popup-content">
           <div className="animal-type">
@@ -51,6 +48,7 @@ function AnimalCard({ animal }: any) {
             <p>Zadnji pregled:</p>
             <p>{examination}</p>
           </div>
+          <button className="animal-more-info-btn" onClick={toggleMoreInfo}>Nazad</button>
           </div>
         </div>
       ) : (
@@ -63,18 +61,18 @@ function AnimalCard({ animal }: any) {
             <p>Vrsta:</p>
             <p>{type}</p>
           </div>
-          <div className="animal-gender">
+          {/* <div className="animal-gender">
             <p>Spol:</p>
             <p>{gender}</p>
-          </div>
-          <div className="animal-years">
+          </div> */}
+          {/* <div className="animal-years">
             <p>Godine:</p>
             <p>{years}</p>
           </div>
           <div className="animal-description">
             <p>Opis:</p>
             <p>{description}</p>
-          </div>
+          </div> */}
           <div className="animal-adopted">
             <p>Udomljena:</p>
             <p>{adopted ? 'Da' : 'Ne'}</p>

@@ -3,11 +3,13 @@ import "../styles/ContactForm.css";
 import axios from "axios";
 
 function ContactForm() {
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     fullName: "",
     mail: "",
     message: "",
-  });
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
 
   const handleInputChange = (e: any) => {
     setFormData({
@@ -29,6 +31,8 @@ function ContactForm() {
         }
       );
       console.log(response.data);
+      alert("Poruka azilu za životinje je uspješno poslana!")
+      setFormData(initialFormData); // Reset the form data
     } catch (error) {
       console.error(error);
     }
