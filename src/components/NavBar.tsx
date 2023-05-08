@@ -12,11 +12,11 @@ function NavBar() {
 
   return (
     <div className="header">
+      <img src="src\assets\dog-cat.jpg" className="logo" alt="logo" />
       <div className="inner">
         <div className="nav-bar">
           <Link to="/about-us">O nama</Link>
           <Link to="/animals">Popis</Link>
-          <img src="src\assets\dog-cat.jpg" className="logo" alt="logo" />
           <Link to="/donations">Donacije</Link>
           <Link to="/notifications">Obavijesti</Link>
           {userRole === "admin" && <Link to="/add-new">Dodaj novog</Link>}

@@ -26,7 +26,7 @@ function AddNew() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3003/zivotinje",
+        "http://localhost:3000/zivotinje",
         newAnimal,
         {
           headers: {

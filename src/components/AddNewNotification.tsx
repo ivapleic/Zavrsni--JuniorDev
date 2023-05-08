@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/AddNewNotification.css";
 
-function AddNewNotification({ newNotification, setNewNotification, handleAddNewNotification,setShowNewNotification }) {
+function AddNewNotification({ newNotification, setNewNotification, handleAddNewNotification,setShowNewNotification }:any) {
   const [isLoading, setIsLoading] = useState(false);
 
   function handleNotificationSubmit(event:any) {
@@ -21,9 +21,9 @@ function AddNewNotification({ newNotification, setNewNotification, handleAddNewN
   }
   
 
-  function handleChange(event) {
+  function handleChange(event:any) {
     const { name, value } = event.target;
-    setNewNotification((prevNotification) => ({
+    setNewNotification((prevNotification:any) => ({
       ...prevNotification,
       [name]: value,
       date: new Date().toLocaleDateString(),

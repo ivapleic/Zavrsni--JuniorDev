@@ -37,3 +37,15 @@
 .animal-more-info-btn {
   margin: 5% 0;
 }
+
+.form-add-animal {
+  min-height: 550px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+label {
+  font-size: 5px;
+}

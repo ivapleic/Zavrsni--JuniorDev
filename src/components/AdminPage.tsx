@@ -15,6 +15,7 @@ function AdminPage() {
       {/* <h1>Welcome, user!</h1> */}
       <div className="main-content">
       <Routes>
+      <Route path="/" element={<AboutUs />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/donations" element={<Donations />} />
         <Route path="/notifications" element={<Notifications />} />

@@ -13,7 +13,7 @@ function Animals() {
   const [selectedAdoptionStatus, setSelectedAdoptionStatus] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3005/zivotinje")
+    fetch("http://localhost:3000/zivotinje")
       .then((response) => response.json())
       .then((data) => {
         setAnimals(data);
@@ -47,7 +47,7 @@ function Animals() {
 
   const handleEditAnimal = (id:any, updatedAnimalData:any) => {
     axios
-      .patch(`http://localhost:3005/zivotinje/${id}`, updatedAnimalData)
+      .put(`http://localhost:3000/zivotinje/${id}`, updatedAnimalData)
       .then((response) => {
         // Update the state with the updated animal data
         setAnimals((prevAnimals:any) => {

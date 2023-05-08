@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../styles/AnimalCard.css";
 
 function AnimalCard({
@@ -21,9 +21,11 @@ function AnimalCard({
 
   const [showMoreInfo, setShowMoreInfo] = useState(false);
   const [editMode, setEditMode] = useState(false);
-  const [formData, setFormData] = useState(animal);
+  const [formData, setFormData] = useState({ ...animal });
 
-  console.log(formData);
+  useEffect(() => {
+    setFormData(animal);
+  }, [animal]);
 
   const toggleMoreInfo = () => {
     setShowMoreInfo(!showMoreInfo);
@@ -43,25 +45,21 @@ function AnimalCard({
     setEditMode(false);
   };
 
-  const handleAdoption=(event:any)=> {
+  const handleAdoption = () => {
     handleEditAnimal(animal.id, { ...animal, adopted: true });
-    };
-  
+  };
 
   function handleInputChange(event: any) {
     const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const value = target.type === "checkbox" ? target.checked : target.value;
     const name = target.name;
-  
+
     const updatedFormData = {
       ...formData,
-      [name]: name === 'adopted' ? target.checked : value
+      [name]: value,
     };
-  
     setFormData(updatedFormData);
   }
-  
-  
 
   function BasicInfo() {
     return (
@@ -96,11 +94,12 @@ function AnimalCard({
             Više informacija
           </button>
           {!adopted && (
-          <button
-            className="animal-adopt-btn"
-            onClick={() => handleAdoption}>
-            Udomi me
-          </button>
+            <button
+              className="animal-adopt-btn"
+              onClick={() => handleAdoption()}
+            >
+              Udomi me
+            </button>
           )}
         </div>
       </>
@@ -154,7 +153,7 @@ function AnimalCard({
 
   function EditingForm() {
     return (
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form-add-animal">
         <label>
           Name:
           <input
@@ -192,7 +191,11 @@ function AnimalCard({
         </label>
         <label>
           Gender:
-          <select name="gender" value={formData.gender} onChange={handleInputChange}>
+          <select
+            name="gender"
+            value={formData.gender}
+            onChange={handleInputChange}
+          >
             <option value="male">Male</option>
             <option value="female">Female</option>
           </select>
@@ -240,7 +243,6 @@ function AnimalCard({
       </form>
     );
   }
-  
 
   return (
     <div className="animal-card">

@@ -16,7 +16,7 @@ function Notifications() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3005/notifications")
+      .get("http://localhost:3000/notifications")
       .then((response) => {
         setNotifications(response.data);
       })
@@ -35,7 +35,7 @@ function Notifications() {
 
   function handleAddNewNotification(newNotificationData) {
     axios
-      .post("http://localhost:3005/notifications", newNotificationData)
+      .post("http://localhost:3000/notifications", newNotificationData)
       .then((response) => {
         setNotifications([...notifications, response.data]);
         setNewNotification({

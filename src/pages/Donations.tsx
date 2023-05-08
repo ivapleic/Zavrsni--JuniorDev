@@ -61,7 +61,7 @@ function Donations() {
   };
 
   function handleAddNewDonation(newDonation) {
-    fetch("http://localhost:3009/donations", {
+    fetch("http://localhost:3000/donations", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

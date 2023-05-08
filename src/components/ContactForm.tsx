@@ -32,7 +32,7 @@ function ContactForm() {
       );
       console.log(response.data);
       alert("Poruka azilu za životinje je uspješno poslana!")
-      setFormData(initialFormData); // Reset the form data
+      setFormData(initialFormData);
     } catch (error) {
       console.error(error);
     }
