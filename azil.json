@@ -1,4 +1,48 @@
 {
+  "messages": [
+    {
+      "id": 1,
+      "fullName": "Iva Pleic",
+      "mail": "ipleic46@gmail.com",
+      "message": "Hello World!"
+    },
+    {
+      "fullName": "Ivan Penava",
+      "mail": "ipenialoe@gmail.com",
+      "message": "A neka poruka ide ode!",
+      "id": 2
+    },
+    {
+      "fullName": "Iva Pleic",
+      "mail": "ippleic46@gmail.com",
+      "message": "Dobar dan!",
+      "id": 3
+    },
+    {
+      "fullName": "Iva Pleic",
+      "mail": "asdfsdgdfgd@gmial.com",
+      "message": "hjuju",
+      "id": 4
+    },
+    {
+      "fullName": "Iva Pleic",
+      "mail": "ippleic46@gmail.com",
+      "message": "h hhhh",
+      "id": 5
+    },
+    {
+      "fullName": "Iva Pleic",
+      "mail": "asdfsdgdfgd@gmial.com",
+      "message": "bdbhfghbfgx",
+      "id": 6
+    },
+    {
+      "fullName": "Ivo Ivic",
+      "mail": "ivoivic@gmail.com",
+      "message": "A kakav krasan azil za pse",
+      "id": 7
+    }
+  ],
   "notifications": [
     {
       "id": 1,
