@@ -18,9 +18,9 @@ function AnimalFilters({
 
   const handleFilterAdoption = (event: any) => {
     const value = event.target.value;
-    if (value === "Udomljen") {
+    if (value === "da") {
       setSelectedAdoptionStatus(true);
-    } else if (value === "Neudomljen") {
+    } else if (value === "ne") {
       setSelectedAdoptionStatus(false);
     }
   };
@@ -103,7 +103,7 @@ function AnimalFilters({
           <label>
             <input
               type="radio"
-              value="Neudomljen"
+              value="ne"
               checked={selectedAdoptionStatus === false}
               onChange={handleFilterAdoption}
             />
@@ -112,7 +112,7 @@ function AnimalFilters({
           <label>
             <input
               type="radio"
-              value="Udomljen"
+              value="da"
               checked={selectedAdoptionStatus===true}
               onChange={handleFilterAdoption}
             />

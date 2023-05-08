@@ -1,52 +1,107 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect} from "react";
 import "../styles/Notifications.css";
 import NotificationCard from "../components/NotificationCard";
+import AddNewNotification from "../components/AddNewNotification";
+import axios from "axios";
 
 function Notifications() {
-
-  const [notifications,setNotifications]=useState([])
-  const [newNotification,setNewNotification]=useState({
-    heading:"",
-    date:"",
-    important:false,
-    text:""
-  })
+  const [notifications, setNotifications] = useState([]);
+  const [newNotification, setNewNotification] = useState({
+    heading: "",
+    important: false,
+    date: "",
+    text: "",
+  });
+  const [showNewNotification, setShowNewNotification] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:3003/notifications")
-      .then((response) => response.json())
-      .then((data) => {
-        setNotifications(data);
-        console.log(data);
+    axios
+      .get("http://localhost:3005/notifications")
+      .then((response) => {
+        setNotifications(response.data);
       })
       .catch((error) => console.log(error));
   }, []);
 
   function handleNewNotificationClick() {
-    <div className="add-new-not">
-      <form onSubmit={handleNotificationSubmit}>
-        {/* unesi naslov,datum danasnji,tekst obavijesti i admin moze oznacit je li vazno ili ne */}
-        </form> </div>
+    setShowNewNotification((prevState) => !prevState);
+    setNewNotification({
+      heading: "",
+      important: false,
+      date: "",
+      text: "",
+    });
   }
 
-  function handleNotificationSubmit() {
-    //dodat u notification json 
+  function handleAddNewNotification(newNotificationData) {
+    axios
+      .post("http://localhost:3005/notifications", newNotificationData)
+      .then((response) => {
+        setNotifications([...notifications, response.data]);
+        setNewNotification({
+          heading: "",
+          important: false,
+          date: "",
+          text: "",
+        });
+      })
+      .catch((error) => console.log(error));
+    setShowNewNotification(false);
   }
 
-  return (
-    <div className="notifications">
-      <h1>Obavijesti</h1>
-      <div className="new-notification">
-        <button className="new-notification-btn" onClick={handleNewNotificationClick}>Nova obavijest</button>
-      </div>
-      <div className="notification-list">
-      {notifications.map((notification) => (
-            <NotificationCard key={notifications.id} notification={notification} />
-          ))}
-       
-      </div>
+  function handleDeleteNotification(id) {
+    setNotifications((prevNotifications) =>
+      prevNotifications.filter((notification) => notification.id !== id)
+    );
+  }
+
+  function handleMarkImportantNotification(updatedNotification) {
+    setNotifications((prevNotifications) =>
+      prevNotifications.map((notification) => {
+        if (notification.id === updatedNotification.id) {
+          return updatedNotification;
+        }
+        return notification;
+      })
+    );
+  }
+  
+
+ return (
+  <div className="notifications">
+    <h1>Obavijesti</h1>
+    <div className="new-notification">
+      <button
+        className="new-notification-btn"
+        onClick={handleNewNotificationClick}
+      >
+        Nova obavijest
+      </button>
     </div>
-  );
+    {showNewNotification && (
+      <div className="form-add-new-not">
+        <AddNewNotification
+          newNotification={newNotification}
+          setNewNotification={setNewNotification}
+          handleAddNewNotification={handleAddNewNotification}
+          setShowNewNotification={setShowNewNotification}
+        />
+      </div>
+    )}
+
+    <div className="notification-list">
+      {notifications.map((notification) => (
+        <NotificationCard
+          key={notification.id}
+          notification={notification}
+          onDelete={() => handleDeleteNotification(notification.id)}
+          onMarkImportant={() => handleMarkImportantNotification(notification.id)}
+        />
+      ))}
+    </div>
+  </div>
+);
+
 }
 
 export default Notifications;

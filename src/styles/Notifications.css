@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   margin: 2% 5%;
-  padding:5px 5px;
+  padding: 5px 5px;
 }
 
 .notification {
@@ -27,4 +27,11 @@
   align-items: flex-start;
   justify-content: space-between;
   margin: 5px 5px;
+}
+
+.form-add-new-not {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 1%;
 }

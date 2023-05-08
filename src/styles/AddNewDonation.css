@@ -1,0 +1,24 @@
+.add-new-donation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.category,
+.type,
+.description,
+.value {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3% 0;
+}
+
+.category,
+.type,
+.description,
+.value > input,select,textarea {
+    width: 55%;
+}
