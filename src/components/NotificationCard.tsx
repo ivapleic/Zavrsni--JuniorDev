@@ -9,7 +9,7 @@ function NotificationCard({ notification, onDelete, onMarkImportant }: any) {
 
   function handleDeleteClick() {
     axios
-      .delete(`http://localhost:3005/notifications/${id}`)
+      .delete(`http://localhost:3000/notifications/${id}`)
       .then((response) => {
         onDelete(id);
       })
@@ -22,12 +22,13 @@ function NotificationCard({ notification, onDelete, onMarkImportant }: any) {
       important: !notification.important,
     };
     axios
-      .put(`http://localhost:3005/notifications/${id}`, updatedNotification)
+      .put(`http://localhost:3000/notifications/${id}`, updatedNotification)
       .then((response) => {
         onMarkImportant(updatedNotification);
       })
       .catch((error) => console.log(error));
   }
+  
 
   const notificationClass = important
     ? "notification important"

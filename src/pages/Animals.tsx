@@ -25,12 +25,14 @@ function Animals() {
     if (
       (selectedType && animal.type !== selectedType) ||
       (selectedGender && animal.gender !== selectedGender) ||
-      (selectedAdoptionStatus && animal.adopted !== selectedAdoptionStatus)
+      (selectedAdoptionStatus === true && animal.adopted !== true) ||
+      (selectedAdoptionStatus === false && animal.adopted !== false)
     ) {
       return false;
     }
     return true;
   });
+  
 
   const handleDeleteAnimal = (id:any) => {
     fetch(`http://localhost:3000/animals/${id}`, {
@@ -49,7 +51,6 @@ function Animals() {
     axios
       .put(`http://localhost:3000/animals/${id}`, updatedAnimalData)
       .then((response) => {
-        // Update the state with the updated animal data
         setAnimals((prevAnimals:any) => {
           const updatedAnimals = prevAnimals.map((animal:any) => {
             if (animal.id === id) {
@@ -64,7 +65,28 @@ function Animals() {
         });
       })
       .catch((error:any) => console.log(error));
-  };
+    }
+
+    const handleAdoption = (id:any, updatedAnimalData:any) => {
+      axios
+        .put(`http://localhost:3000/animals/${id}`, updatedAnimalData)
+        .then((response) => {
+          setAnimals((prevAnimals:any) => {
+            const updatedAnimals = prevAnimals.map((animal:any) => {
+              if (animal.id === id) {
+                return {
+                  ...animal,
+                  ...updatedAnimalData,
+                };
+              }
+              return animal;
+            });
+            return updatedAnimals;
+          });
+        })
+        .catch((error:any) => console.log(error));
+      }
+
 
   return (
     <div className="animals">
@@ -85,6 +107,7 @@ function Animals() {
             userRole={userRole}
             handleDeleteAnimal={userRole === "admin" ? handleDeleteAnimal : null}
             handleEditAnimal={userRole === "admin" ? handleEditAnimal : null}
+            handleAdoption={handleAdoption}
           />
         ))}
       </div>

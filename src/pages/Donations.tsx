@@ -22,14 +22,14 @@ function Donations() {
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:3000/donations/${id}`).then((res) => {
+    axios.delete(`http://localhost:3000/donations/${id}`).then(() => {
       setDonations((prevDonations) =>
         prevDonations.filter((donation) => donation.id !== id)
       );
     });
   };
 
-  const handleAcceptDonation = (id) => {
+  const handleAcceptDonation = (id:any) => {
     const updatedDonations = donations.map((donation) => {
       if (donation.id === id) {
         return { ...donation, category: "donirano" };
@@ -59,7 +59,7 @@ function Donations() {
     setDonations(updatedDonations);
   };
 
-  function handleAddNewDonation(newDonation) {
+  function handleAddNewDonation(newDonation:any) {
     fetch("http://localhost:3000/donations", {
       method: "POST",
       headers: {
@@ -86,7 +86,8 @@ function Donations() {
       <h1>Donacije</h1>
       <div className="add-new-donation">
         <h3>Od srca zahvaljujemo na podršci i na svakoj vrsti donacije ❤</h3>
-        <button onClick={() => setAddingNewDonation(true)}>
+        <br />
+        <button onClick={() => setAddingNewDonation(true)} className="new-donation-btn">
           NOVA DONACIJA
         </button>
         {addingNewDonation ? (

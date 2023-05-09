@@ -47,3 +47,9 @@ th,td,tr {
 .donations h2 {
     color: #58a183;
 }
+
+.new-donation-btn {
+  background-color:#7dc4a4 ;
+  height: 45px;
+  width: 190px;
+}

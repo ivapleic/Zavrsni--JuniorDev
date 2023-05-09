@@ -36,3 +36,10 @@
   margin-top: 1%;
   min-height: 180px;
 }
+
+.new-notification-btn {
+  background-color:#7dc4a4 ;
+  height: 45px;
+  width: 160px;
+
+}

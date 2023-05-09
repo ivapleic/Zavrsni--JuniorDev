@@ -53,7 +53,7 @@
       "heading": "Traži se radnica!",
       "important": false,
       "date": "09. 05. 2023.",
-      "text": "A ženska po mogućnosti",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
       "id": 5
     }
   ],
@@ -122,6 +122,13 @@
       "value": "9",
       "description": "Lijekovi za liječenje bijesnoće",
       "id": 14
+    },
+    {
+      "category": "nudi",
+      "type": "igračke",
+      "value": "6",
+      "description": "Igračke za pse",
+      "id": 15
     }
   ],
   "animals": [
@@ -129,16 +136,52 @@
       "id": 1,
       "name": "Floki",
       "type": "pas",
+      "years": "3",
       "gender": "mužjak",
-      "chip": true,
-      "years": 4,
-      "description": "Voli se igrati",
-      "examination": "2020-02-23",
+      "chip": false,
       "adopted": false,
-      "image": "src/assets/pas1.jpg"
+      "image": "src/assets/pas1.jpg",
+      "examination": "2023-05-05",
+      "description": "voli se igrati :)"
     },
     {
       "id": 2,
+      "name": "Aron",
+      "type": "pas",
+      "years": "6",
+      "gender": "mužjak",
+      "chip": false,
+      "adopted": false,
+      "image": "src/assets/pas6.jpeg",
+      "examination": "2023-05-05",
+      "description": "voli se igrati :)"
+    },
+    {
+      "id": 3,
+      "name": "Dana",
+      "type": "pas",
+      "years": "1",
+      "gender": "ženka",
+      "chip": true,
+      "adopted": false,
+      "image": "src/assets/pas7.jpg",
+      "examination": "2023-04-13",
+      "description": "Voli se maziti"
+    },
+    {
+      "id": 4,
+      "name": "Krešo",
+      "type": "pas",
+      "gender": "mužjak",
+      "chip": true,
+      "years": 7,
+      "description": "Voli se maziti",
+      "examination": "2021-02-13",
+      "adopted": true,
+      "image": "src/assets/pas9.jpeg"
+    },
+    {
+      "id": 5,
       "name": "Bo",
       "type": "pas",
       "gender": "mužjak",
@@ -146,11 +189,11 @@
       "years": 9,
       "description": "Voli spavanje",
       "examination": "2022-09-23",
-      "adopted": false,
-      "image": "src/assets/pas2.jpg"
+      "adopted": true,
+      "image": "src/assets/pas8.jpeg"
     },
     {
-      "id": 3,
+      "id": 6,
       "name": "Bella",
       "type": "pas",
       "gender": "ženka",
@@ -162,19 +205,7 @@
       "image": "src/assets/pas3.jpg"
     },
     {
-      "id": 4,
-      "name": "Krešo",
-      "type": "pas",
-      "gender": "mužjak",
-      "chip": true,
-      "years": 7,
-      "description": "Voli se maziti",
-      "examination": "2021-02-13",
-      "adopted": false,
-      "image": "src/assets/pas5.jpg"
-    },
-    {
-      "id": 5,
+      "id": 7,
       "name": "Ria",
       "type": "pas",
       "gender": "ženka",
@@ -186,7 +217,7 @@
       "image": "src/assets/ria-img.jpg"
     },
     {
-      "id": 6,
+      "id": 8,
       "name": "Lili",
       "type": "mačka",
       "gender": "ženka",
@@ -198,7 +229,7 @@
       "image": "src/assets/macka1.jpeg"
     },
     {
-      "id": 7,
+      "id": 9,
       "name": "Mia",
       "type": "mačka",
       "gender": "ženka",
@@ -207,10 +238,10 @@
       "description": "Voli se igrati",
       "examination": "2022-04-23",
       "adopted": false,
-      "image": "src/assets/macka2.avif"
+      "image": "src/assets/macka5.jpeg"
     },
     {
-      "id": 8,
+      "id": 10,
       "name": "Šime",
       "type": "mačka",
       "gender": "mužjak",
@@ -218,11 +249,11 @@
       "years": 10,
       "description": "Voli spavanje",
       "examination": "2022-02-23",
-      "adopted": false,
+      "adopted": true,
       "image": "src/assets/macka3.jpeg"
     },
     {
-      "id": 9,
+      "id": 11,
       "name": "Romeo",
       "type": "mačka",
       "gender": "mužjak",
@@ -234,7 +265,7 @@
       "image": "src/assets/macka4.jpeg"
     },
     {
-      "id": 10,
+      "id": 12,
       "name": "Kiko",
       "type": "zec",
       "gender": "mužjak",
@@ -246,7 +277,7 @@
       "image": "src/assets/zec1.webp"
     },
     {
-      "id": 11,
+      "id": 13,
       "name": "Diego",
       "type": "zec",
       "gender": "mužjak",
@@ -258,7 +289,7 @@
       "image": "src/assets/zec2.jpg"
     },
     {
-      "id": 12,
+      "id": 14,
       "name": "Mimi",
       "type": "zec",
       "gender": "ženka",

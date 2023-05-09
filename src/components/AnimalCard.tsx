@@ -6,6 +6,7 @@ function AnimalCard({
   handleDeleteAnimal,
   handleEditAnimal,
   userRole,
+  handleAdoption,
 }: any) {
   const {
     name,
@@ -45,8 +46,9 @@ function AnimalCard({
     setEditMode(false);
   };
 
-  const handleAdoption = () => {
-    handleEditAnimal(animal.id, { ...animal, adopted: true });
+  const handleAdoptionClick = () => {
+    alert("Životinja je uspješno udomljena");
+    handleAdoption(animal.id, { ...animal, adopted: true });
   };
 
   function handleInputChange(event: any) {
@@ -64,16 +66,20 @@ function AnimalCard({
   function BasicInfo() {
     return (
       <>
-        <h2>{name}</h2>
+          <h2 className="heading2-animalcard">{name}</h2>
         <div className="animal-img">
           <img src={image} alt={`${name}`} />
         </div>
         <div className="animal-type">
-          <p><b>Vrsta:</b></p>
+          <p>
+            <b>Vrsta:</b>
+          </p>
           <p>{type}</p>
         </div>
         <div className="animal-adopted">
-          <p><b>Udomljen:</b></p>
+          <p>
+            <b>Udomljen:</b>
+          </p>
           <p>{adopted ? "Da" : "Ne"}</p>
         </div>
         <div className="animal-buttons">
@@ -96,7 +102,7 @@ function AnimalCard({
           {!adopted && (
             <button
               className="animal-adopt-btn"
-              onClick={() => handleAdoption()}
+              onClick={() => handleAdoptionClick()}
             >
               Udomi me
             </button>
@@ -112,31 +118,45 @@ function AnimalCard({
         <h2>{name}</h2>
         <div className="animal-more-info-popup-content">
           <div className="animal-type">
-            <p><b>Vrsta:</b></p>
+            <p>
+              <b>Vrsta:</b>
+            </p>
             <p>{type}</p>
           </div>
           <div className="animal-gender">
-            <p><b>Spol:</b></p>
+            <p>
+              <b>Spol:</b>
+            </p>
             <p>{gender}</p>
           </div>
           <div className="animal-years">
-            <p><b>Godine:</b></p>
+            <p>
+              <b>Godine:</b>
+            </p>
             <p>{years}</p>
           </div>
           <div className="animal-description">
-            <p><b>Opis:</b></p>
+            <p>
+              <b>Opis:</b>
+            </p>
             <p>{description}</p>
           </div>
           <div className="animal-adopted">
-            <p><b>Udomljen:</b></p>
+            <p>
+              <b>Udomljen:</b>
+            </p>
             <p>{adopted ? "Da" : "Ne"}</p>
           </div>
           <div className="animal-examination">
-            <p><b>Zadnji pregled:</b></p>
+            <p>
+              <b>Zadnji pregled:</b>
+            </p>
             <p>{examination}</p>
           </div>
           <div className="animal-chip">
-            <p><b>Čip:</b></p>
+            <p>
+              <b>Čip:</b>
+            </p>
             <p>{chip ? "Da" : "Ne"}</p>
           </div>
           <button className="animal-more-info-btn" onClick={toggleMoreInfo}>
@@ -232,10 +252,12 @@ function AnimalCard({
             onChange={handleInputChange}
           />
         </label>
-        <button type="submit">Save</button>
-        <button type="button" onClick={handleCancel}>
-          Cancel
-        </button>
+        <div className="buttons-edit-form">
+          <button type="submit">Save</button>
+          <button type="button" onClick={handleCancel}>
+            Cancel
+          </button>
+        </div>
       </form>
     );
   }

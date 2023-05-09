@@ -1,118 +1,123 @@
 .add-new-donation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 40%;
 }
 
 .form-add-new-don {
-    padding: 2% 0;
-    margin-top: 2%;
-    background-color: #7ecaac;
-    min-width: 600px;
-    min-height: 250px;
-    max-height: 380px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
-
+  padding: 2% 0;
+  margin-top: 5%;
+  background-color: rgba(
+    241,
+    241,
+    241,
+    0.806
+  ) !important;
+  transition: transform 0.3s ease-in-out;
+  min-width: 600px;
+  min-height: 250px;
+  max-height: 380px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .type-value {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .category,
 .type,
 .description,
 .value {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 2% 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2% 0;
 }
-
 
 .category,
 .type,
 .description,
-.value > input,select,textarea {
-    width: 40%;
+.value > input,
+select,
+textarea {
+  width: 40%;
 }
 
 .category {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .category p {
-    margin-left: 5px;
-    font-size: 20px;
+  margin-left: 5px;
+  font-size: 20px;
 }
 
-.type  {
-    width: 40%;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.type {
+  width: 40%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .type > select {
-    margin-left:15px;
-    width: 60%;
-    min-height: 30px;
-    font-size: 15px;
+  margin-left: 15px;
+  width: 60%;
+  min-height: 30px;
+  font-size: 15px;
 }
 
-.type > option {
-    min-width: 150px;
-    text-align: center;
+.type >select> option {
+  min-width: 150px;
+  text-align: center;
 }
 
 .value {
-    width: 60%;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  width: 60%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .value input {
-    min-height: 30px;
+  min-height: 30px;
 }
 
 .description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  min-height: 100px;
 }
 
 .description textarea {
-    width: 70%;
-    margin-left: 15px;
-    min-height:80px;
+  width: 70%;
+  margin-left: 15px;
+  min-height: 80px;
 }
 
 .button-container {
-    margin: 2% 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+  margin: 2% 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }

@@ -4,9 +4,6 @@ function AddNewDonation({
   setAddingNewDonation,
   newDonation,
   setNewDonation,
-  userRole,
-  setDonations,
-  donations,
   handleAddNewDonation,
 }: any) {
 
@@ -36,6 +33,7 @@ function AddNewDonation({
                 setNewDonation({ ...newDonation, type: event.target.value })
               }
             >
+              <option value=""></option>
               <option value="hrana">Hrana</option>
               <option value="lijekovi">Lijekovi</option>
               <option value="igračke">Igračke</option>

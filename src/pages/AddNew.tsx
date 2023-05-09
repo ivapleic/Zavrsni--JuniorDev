@@ -7,7 +7,7 @@ function AddNew() {
     name: "",
     type: "",
     years: "",
-    gender:"",
+    gender: "",
     chip: false,
     adopted: false,
     image: "",
@@ -64,22 +64,30 @@ function AddNew() {
             <br />
             <label>
               Type:
-              <input
-                type="text"
+              <select
                 name="type"
                 value={newAnimal.type}
                 onChange={handleChange}
-              />
+              >
+                <option value="">---</option>
+                <option value="pas">pas</option>
+                <option value="mačka">mačka</option>
+                <option value="zec">zec</option>
+              </select>
             </label>
+            <br />
             <br />
             <label>
               Gender:
-              <input
-                type="text"
+              <select
                 name="gender"
                 value={newAnimal.gender}
                 onChange={handleChange}
-              />
+              >
+                <option value="">---</option>
+                <option value="mužjak">mužjak</option>
+                <option value="ženka">ženka</option>
+              </select>
             </label>
             <br />
             <label>
@@ -116,41 +124,29 @@ function AddNew() {
             </label>
             <br />
             <label>
-              Adopted:
+              Image URL:
               <input
-                type="checkbox"
-                name="adopted"
-                checked={newAnimal.adopted}
+                type="text"
+                name="image"
+                value={newAnimal.image}
                 onChange={handleChange}
+              />
+            </label>
+            <br />
+            <label>
+              Napomena:
+              <input
+                type="textbox"
+                name="description"
+                value={newAnimal.description}
+                onChange={handleChange}
+                className="napomena"
               />
             </label>
             <br />
           </div>
         </div>
-        <div className="third-div-img">
-          <label>
-            Image URL:
-            <input
-              type="text"
-              name="image"
-              value={newAnimal.image}
-              onChange={handleChange}
-            />
-          </label>
-          <br />
-          <label>
-            Napomena:
-            <input
-              type="textbox"
-              name="description"
-              value={newAnimal.description}
-              onChange={handleChange}
-              className="napomena"
-            />
-          </label>
-          <br />
-        </div>
-        <button type="submit">Submit</button>
+        <button type="submit">Dodaj životinju</button>
       </form>
     </div>
   );
