@@ -18,17 +18,20 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 0;
+  font-family: 'Noto Serif', serif;
 }
 
 .radio-label input {
    height: 20px;
   width: 20px;
   margin-right: 15px; 
+  font-family: 'Noto Serif', serif;
 }
 
 .radio-label label {
   display: flex;
   align-items: center;
+  font-family: 'Noto Serif', serif;
 }
 
 .filter button {

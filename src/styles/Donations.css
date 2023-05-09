@@ -1,29 +1,49 @@
 .donations {
-    height: 100%;
-    width: 90%;
-    background-color: white;
-    margin: 6rem 1rem;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  padding-bottom: 2%;
+  height: 100%;
+  width: 90%;
+  background-color: white;
+  margin: 6rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .offer-donations,
 .wanted-donations,
 .already-donated {
-    height: 25%;
-    width: 90%;
-    margin: 2% 0;
-    /* background-color: lightcoral; */
-    display: flex;
-    flex-direction: column;
+    padding: 2% 2%;
+  height: 25%;
+  width: 80%;
+  margin: 2% 0;
+  background-color: rgba(
+    241,
+    241,
+    241,
+    0.806
+  ) !important; /* add the !important declaration */
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
 }
 
 h2 {
-    display:flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding:1% ;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1%;
+}
+
+th,td,tr {
+  border-collapse: collapse;
+  padding: 1%;
+}
+
+.donations h2 {
+    color: #58a183;
 }

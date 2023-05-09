@@ -69,11 +69,11 @@ function AnimalCard({
           <img src={image} alt={`${name}`} />
         </div>
         <div className="animal-type">
-          <p>Vrsta:</p>
+          <p><b>Vrsta:</b></p>
           <p>{type}</p>
         </div>
         <div className="animal-adopted">
-          <p>Udomljen:</p>
+          <p><b>Udomljen:</b></p>
           <p>{adopted ? "Da" : "Ne"}</p>
         </div>
         <div className="animal-buttons">
@@ -112,36 +112,32 @@ function AnimalCard({
         <h2>{name}</h2>
         <div className="animal-more-info-popup-content">
           <div className="animal-type">
-            <p>Vrsta:</p>
+            <p><b>Vrsta:</b></p>
             <p>{type}</p>
           </div>
           <div className="animal-gender">
-            <p>Spol:</p>
+            <p><b>Spol:</b></p>
             <p>{gender}</p>
           </div>
           <div className="animal-years">
-            <p>Godine:</p>
+            <p><b>Godine:</b></p>
             <p>{years}</p>
           </div>
           <div className="animal-description">
-            <p>Opis:</p>
+            <p><b>Opis:</b></p>
             <p>{description}</p>
           </div>
           <div className="animal-adopted">
-            <p>Udomljen:</p>
+            <p><b>Udomljen:</b></p>
             <p>{adopted ? "Da" : "Ne"}</p>
           </div>
           <div className="animal-examination">
-            <p>Zadnji pregled:</p>
+            <p><b>Zadnji pregled:</b></p>
             <p>{examination}</p>
           </div>
           <div className="animal-chip">
-            <p>Čip:</p>
+            <p><b>Čip:</b></p>
             <p>{chip ? "Da" : "Ne"}</p>
-          </div>
-          <div className="animal-examination">
-            <p>Zadnji pregled:</p>
-            <p>{examination}</p>
           </div>
           <button className="animal-more-info-btn" onClick={toggleMoreInfo}>
             Nazad

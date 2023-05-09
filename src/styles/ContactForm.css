@@ -11,6 +11,18 @@
     padding: 2% 0;
 }
 
+.contact-form h2 {
+    font-family: 'Noto Serif', serif;
+}
+
+.submit-btn > button {
+    font-family: 'Noto Serif', serif;
+}
+
+.contact-form label {
+    font-family: 'Noto Serif', serif;
+}
+
 .name-email {
     min-height: 200px;
     /* background-color: aqua; */

@@ -22,14 +22,13 @@ function NavBar() {
           {userRole === "admin" && <Link to="/add-new">Dodaj novog</Link>}
         </div>
         <div className="user-role">
-          <label className="switch">
             <input
               type="checkbox"
               checked={userRole === "admin"}
               onChange={handleUserRoleChange}
+              className="admin-check"
             />
-            <span className="slider round">Admin</span>
-          </label>
+            <label className="switch">&#8594;{" "}Admin</label>
         </div>
       </div>
     </div>

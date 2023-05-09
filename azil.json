@@ -11,36 +11,6 @@
       "mail": "ipenialoe@gmail.com",
       "message": "A neka poruka ide ode!",
       "id": 2
-    },
-    {
-      "fullName": "Iva Pleic",
-      "mail": "ippleic46@gmail.com",
-      "message": "Dobar dan!",
-      "id": 3
-    },
-    {
-      "fullName": "Iva Pleic",
-      "mail": "asdfsdgdfgd@gmial.com",
-      "message": "hjuju",
-      "id": 4
-    },
-    {
-      "fullName": "Iva Pleic",
-      "mail": "ippleic46@gmail.com",
-      "message": "h hhhh",
-      "id": 5
-    },
-    {
-      "fullName": "Iva Pleic",
-      "mail": "asdfsdgdfgd@gmial.com",
-      "message": "bdbhfghbfgx",
-      "id": 6
-    },
-    {
-      "fullName": "Ivo Ivic",
-      "mail": "ivoivic@gmail.com",
-      "message": "A kakav krasan azil za pse",
-      "id": 7
     }
   ],
   "notifications": [
@@ -124,104 +94,159 @@
       "value": "3",
       "description": "operacija macke noga",
       "id": 13
-    }
-  ],
-  "zivotinje": [
-    {
-      "id": 4,
-      "name": "Nero",
-      "type": "Mačka",
-      "gender": "female",
-      "chip": true,
-      "years": 15,
-      "description": "Voli se igrati",
-      "examination": "2000-02-23",
-      "adopted": true,
-      "image": "https://i0.hippopx.com/photos/1003/906/372/dog-small-black-dog-miniature-dog-preview.jpg"
     },
     {
-      "id": 7,
+      "category": "nudi",
+      "type": "lijekovi",
+      "value": "9",
+      "description": "Lijekovi za liječenje bijesnoće",
+      "id": 14
+    }
+  ],
+  "animals": [
+    {
+      "id": 1,
+      "name": "Floki",
+      "type": "pas",
+      "gender": "mužjak",
+      "chip": true,
+      "years": 4,
+      "description": "Voli se igrati",
+      "examination": "2020-02-23",
+      "adopted": false,
+      "image": "src/assets/pas1.jpg"
+    },
+    {
+      "id": 2,
       "name": "Bo",
       "type": "pas",
       "gender": "mužjak",
       "chip": true,
-      "years": 12,
+      "years": 9,
       "description": "Voli spavanje",
       "examination": "2022-09-23",
+      "adopted": false,
+      "image": "src/assets/pas2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Bella",
+      "type": "pas",
+      "gender": "ženka",
+      "chip": false,
+      "years": "2",
+      "description": "Više od običnog psa",
+      "examination": "2023-02-01",
+      "adopted": false,
+      "image": "src/assets/pas3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Krešo",
+      "type": "pas",
+      "gender": "mužjak",
+      "chip": true,
+      "years": 7,
+      "description": "Voli se maziti",
+      "examination": "2021-02-13",
+      "adopted": false,
+      "image": "src/assets/pas5.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Ria",
+      "type": "pas",
+      "gender": "ženka",
+      "chip": true,
+      "years": 9,
+      "description": "Voli spavati",
+      "examination": "2022-04-23",
       "adopted": true,
-      "image": "https://image.dnevnik.hr/media/images/1024xX/Jun2022/62316995.jpg"
+      "image": "src/assets/ria-img.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Lili",
+      "type": "mačka",
+      "gender": "ženka",
+      "chip": true,
+      "years": 2,
+      "description": "Zaigrana i vesela",
+      "examination": "2022-02-13",
+      "adopted": false,
+      "image": "src/assets/macka1.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Mia",
+      "type": "mačka",
+      "gender": "ženka",
+      "chip": true,
+      "years": 8,
+      "description": "Voli se igrati",
+      "examination": "2022-04-23",
+      "adopted": false,
+      "image": "src/assets/macka2.avif"
     },
     {
       "id": 8,
-      "name": "Floki",
-      "type": "paszdcw",
-      "gender": "male",
-      "chip": false,
-      "years": "1",
-      "description": "Više od običnog psada",
-      "examination": "2000-02-09",
+      "name": "Šime",
+      "type": "mačka",
+      "gender": "mužjak",
+      "chip": true,
+      "years": 10,
+      "description": "Voli spavanje",
+      "examination": "2022-02-23",
       "adopted": false,
-      "image": "https://www.zoocity.hr/media/blog/cache/800x_0/magefan_blog/Sharpei.jpg"
+      "image": "src/assets/macka3.jpeg"
     },
     {
       "id": 9,
-      "name": "Snoopy",
-      "type": "pas",
+      "name": "Romeo",
+      "type": "mačka",
       "gender": "mužjak",
       "chip": true,
-      "years": 50,
-      "description": "Više od običnog psa",
-      "examination": "2000-02-13",
+      "years": 1,
+      "description": "Voli se igrati",
+      "examination": "2021-02-23",
       "adopted": false,
-      "image": "https://image.dnevnik.hr/media/images/1024xX/Jun2022/62317024.jpg"
+      "image": "src/assets/macka4.jpeg"
     },
     {
       "id": 10,
-      "name": "Ria",
-      "type": "pas",
-      "gender": "ženka",
-      "chip": true,
-      "years": 8,
-      "description": "Voli spavati",
-      "examination": "2022-04-23",
+      "name": "Kiko",
+      "type": "zec",
+      "gender": "mužjak",
+      "chip": false,
+      "years": 1,
+      "description": "Voli skakati",
+      "examination": "2023-02-23",
+      "adopted": false,
+      "image": "src/assets/zec1.webp"
+    },
+    {
+      "id": 11,
+      "name": "Diego",
+      "type": "zec",
+      "gender": "mužjak",
+      "chip": false,
+      "years": 10,
+      "description": "Voli se igrati",
+      "examination": "2020-02-23",
       "adopted": true,
-      "image": "src/assets/ria-img.jpg"
+      "image": "src/assets/zec2.jpg"
     },
     {
       "id": 12,
-      "name": "Snoopy",
-      "type": "pas",
-      "gender": "mužjak",
-      "chip": true,
-      "years": 50,
-      "description": "Više od običnog psa",
-      "examination": "2000-02-13",
-      "adopted": false,
-      "image": "https://image.dnevnik.hr/media/images/1024xX/Jun2022/62317024.jpg"
-    },
-    {
-      "id": 13,
-      "name": "Ria",
-      "type": "pas",
+      "name": "Mimi",
+      "type": "zec",
       "gender": "ženka",
       "chip": true,
-      "years": 8,
-      "description": "Voli spavati",
-      "examination": "2022-04-23",
-      "adopted": true,
-      "image": "src/assets/ria-img.jpg"
-    },
-    {
-      "id": 14,
-      "name": "Nero",
-      "type": "pas",
-      "gender": "mužjak",
-      "chip": false,
-      "years": 15,
-      "description": "Voli se igrati",
-      "examination": "2000-02-23",
-      "adopted": true,
-      "image": "https://i0.hippopx.com/photos/1003/906/372/dog-small-black-dog-miniature-dog-preview.jpg"
+      "years": 1,
+      "description": "Voli mrkvu",
+      "examination": "2018-02-23",
+      "adopted": false,
+      "image": "src/assets/zec3.jpeg"
     }
   ]
 }

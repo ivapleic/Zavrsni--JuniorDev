@@ -13,7 +13,7 @@ function Animals() {
   const [selectedAdoptionStatus, setSelectedAdoptionStatus] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/zivotinje")
+    fetch("http://localhost:3000/animals")
       .then((response) => response.json())
       .then((data) => {
         setAnimals(data);
@@ -33,7 +33,7 @@ function Animals() {
   });
 
   const handleDeleteAnimal = (id:any) => {
-    fetch(`http://localhost:3005/zivotinje/${id}`, {
+    fetch(`http://localhost:3000/animals/${id}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
@@ -47,7 +47,7 @@ function Animals() {
 
   const handleEditAnimal = (id:any, updatedAnimalData:any) => {
     axios
-      .put(`http://localhost:3000/zivotinje/${id}`, updatedAnimalData)
+      .put(`http://localhost:3000/animals/${id}`, updatedAnimalData)
       .then((response) => {
         // Update the state with the updated animal data
         setAnimals((prevAnimals:any) => {

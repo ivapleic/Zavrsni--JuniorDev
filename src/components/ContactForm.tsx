@@ -22,7 +22,7 @@ function ContactForm() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3009/messages",
+        "http://localhost:3000/messages",
         formData,
         {
           headers: {
@@ -31,7 +31,7 @@ function ContactForm() {
         }
       );
       console.log(response.data);
-      alert("Poruka azilu za životinje je uspješno poslana!")
+      alert("Vaša poruka azilu je uspješno poslana!")
       setFormData(initialFormData);
     } catch (error) {
       console.error(error);
@@ -42,7 +42,7 @@ function ContactForm() {
     <form onSubmit={handleSubmit} className="contact-form">
       <h2>Kontaktirajte nas putem poruke</h2>
       <div className="name-email">
-        <label htmlFor="fullName">Full Name:</label>
+        <label htmlFor="fullName">Ime i prezime:</label>
         <input
           type="text"
           id="fullName"
@@ -52,7 +52,7 @@ function ContactForm() {
           required
         />
 
-        <label htmlFor="email">Email:</label>
+        <label htmlFor="email">Mail:</label>
         <input
           type="email"
           id="email"
@@ -63,7 +63,7 @@ function ContactForm() {
         />
       </div>
       <div className="msg">
-        <label htmlFor="message">Message:</label>
+        <label htmlFor="message">Poruka:</label>
         <textarea
           id="message"
           name="message"

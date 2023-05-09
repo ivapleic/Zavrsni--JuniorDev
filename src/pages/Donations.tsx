@@ -17,13 +17,13 @@ function Donations() {
   const [addingNewDonation, setAddingNewDonation] = useState(false);
 
   useEffect(() => {
-    axios.get("http://localhost:3009/donations").then((res) => {
+    axios.get("http://localhost:3000/donations").then((res) => {
       setDonations(res.data);
     });
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:3009/donations/${id}`).then((res) => {
+    axios.delete(`http://localhost:3000/donations/${id}`).then((res) => {
       setDonations((prevDonations) =>
         prevDonations.filter((donation) => donation.id !== id)
       );
@@ -87,7 +87,7 @@ function Donations() {
       <h1>Donacije</h1>
       <div className="add-new-donation">
         <button onClick={() => setAddingNewDonation(true)}>
-          Nova donacija
+          NOVA DONACIJA
         </button>
         {addingNewDonation ? (
           <AddNewDonation
@@ -103,8 +103,8 @@ function Donations() {
       </div>
 
       <div className="offer-donations">
-        <h2>Nudimo:</h2>
-        <table>
+        <h2>NUDIMO:</h2>
+        <table className="donation-table">
           <thead>
             <tr>
               <th>Tip</th>
@@ -138,8 +138,8 @@ function Donations() {
         </table>
       </div>
       <div className="wanted-donations">
-        <h2>Tražimo:</h2>
-        <table>
+        <h2>TRAŽIMO:</h2>
+        <table className="donation-table">
           <thead>
             <tr>
               <th>Tip</th>
@@ -177,8 +177,8 @@ function Donations() {
         </table>
       </div>
       <div className="already-donated">
-        <h2>Donirano:</h2>
-        <table>
+        <h2>DONIRANO:</h2>
+        <table className="donation-table">
           <thead>
             <tr>
               <th>Tip</th>
