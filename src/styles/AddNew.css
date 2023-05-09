@@ -1,80 +1,83 @@
 .add-new {
-    height: 100%;
-    width: 90%;
-    background-color: white;
-    margin: 6rem 1rem;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    padding: 25px 10px;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  width: 90%;
+  background-color: white;
+  margin: 6rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-add-new {
-    background-color: rgb(174, 173, 173);
-    width: 90%;
-    padding: 0 5px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
+  background-color: rgba(88, 161, 131, 0.4);
+  border-radius: 10px;
+  width: 90%;
+  padding: 0 5px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
 }
 
 .heading {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  font-size: 30px;
 }
 
 .first-div {
-    /* background-color: bisque; */
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  /* background-color: bisque; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .second-div {
-    /* background-color: lightcoral; */
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  /* background-color: lightcoral; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .third-div-img {
-    /* background-color: lightgreen; */
-    width: 70%;
+  /* background-color: lightgreen; */
+  width: 70%;
 }
 
 .first-two-divs {
-    display: flex;
-    flex-direction: row;
-    min-height: 350px;
-    width: 80%;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  min-height: 350px;
+  width: 80%;
+  justify-content: space-around;
 }
 
 label {
-    font-size: 20px;
+  font-size: 20px;
 }
-label> input {
-    margin:  10px;
+label > input {
+  margin: 10px;
 }
 
 .form-add-new > button {
-    margin-top: 30px;
-    margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .napomena {
-    height: 70px;
-    width: 60%;
+  height: 70px;
+  width: 60%;
 }

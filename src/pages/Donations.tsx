@@ -5,7 +5,6 @@ import UserRoleContext from "../components/UserRole";
 import AddNewDonation from "../components/AddNewDonation";
 
 function Donations() {
-
   const [donations, setDonations] = useState([]);
   const { userRole } = useContext(UserRoleContext);
   const [newDonation, setNewDonation] = useState({
@@ -86,6 +85,7 @@ function Donations() {
     <div className="donations">
       <h1>Donacije</h1>
       <div className="add-new-donation">
+        <h3>Od srca zahvaljujemo na podršci i na svakoj vrsti donacije ❤</h3>
         <button onClick={() => setAddingNewDonation(true)}>
           NOVA DONACIJA
         </button>
@@ -121,7 +121,7 @@ function Donations() {
                 <tr key={donation.id}>
                   <td>{donation.type}</td>
                   <td>{donation.description}</td>
-                  <td>{donation.value}</td>
+                  <td>{donation.value}€</td>
                   {userRole === "admin" && (
                     <td>
                       <button onClick={() => handleAcceptDonation(donation.id)}>
@@ -155,11 +155,11 @@ function Donations() {
                 <tr key={donation.id}>
                   <td>{donation.type}</td>
                   <td>{donation.description}</td>
-                  <td>{donation.value}</td>
+                  <td>{donation.value}€ </td>
                   {userRole === "user" && (
                     <button onClick={() => handleDonate(donation.id)}>
-                    Doniraj
-                  </button>
+                      Doniraj
+                    </button>
                   )}
                   {userRole === "admin" && (
                     <td>
@@ -194,7 +194,7 @@ function Donations() {
                 <tr key={donation.id}>
                   <td>{donation.type}</td>
                   <td>{donation.description}</td>
-                  <td>{donation.value}</td>
+                  <td>{donation.value}€</td>
                   {userRole === "admin" && (
                     <td>
                       <button onClick={() => handleRepeatRequest(donation.id)}>

@@ -95,3 +95,9 @@ label {
   align-items: center;
 
 }
+
+.animal-adopt-btn {
+
+  background-color: #7dc4a4;
+  color: white;
+}

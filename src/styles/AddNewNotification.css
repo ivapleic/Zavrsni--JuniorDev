@@ -1,5 +1,30 @@
 .add-new-notification {
-    background-color: lightcoral;
-    width: 40%;
-    height: 50%;
+    border-radius: 10px;
+    border: 0.5px solid grey;
+    padding: 1% 0;
+    width: 60%;
+    height: 100%;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.add-new-notification-buttons {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-new-notification label {
+    width: 100%;
+    min-height: 35px;
+}
+
+.add-new-notification > label > input {
+     min-height: 35px;
+     min-width: 250px;
+} 

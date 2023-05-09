@@ -43,7 +43,7 @@ function AddNewDonation({
             </select>
           </div>
           <div className="value">
-            <label htmlFor="value">Vrijednost donacije:</label>
+            <label htmlFor="value">Vrijednost donacije (€):</label>
             <input
               type="number"
               id="value"

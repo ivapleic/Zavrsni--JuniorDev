@@ -1,64 +1,70 @@
 .contact-form {
-    height: 100%;
-    min-height: 350px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    background-color: lightgray;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 10px;
-    padding: 2% 0;
+  height: 100%;
+  min-height: 350px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(
+    241,
+    241,
+    241,
+    0.806
+  ) !important; /* add the !important declaration */
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2% 0;
 }
 
 .contact-form h2 {
-    font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
 }
 
 .submit-btn > button {
-    font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
 }
 
 .contact-form label {
-    font-family: 'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
 }
 
 .name-email {
-    min-height: 200px;
-    /* background-color: aqua; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 3% 0;
+  min-height: 200px;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3% 0;
 }
 
 .name-email input {
-    width: 40%;
-    min-height: 30px;
-    min-width: 200px;
-    font-size: 15px;
+  width: 40%;
+  min-height: 30px;
+  min-width: 200px;
+  font-size: 15px;
 }
 
 .msg {
-    min-height: 150px;
-    /* background-color: rebeccapurple; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 2% 0;
+  min-height: 150px;
+  /* background-color: rebeccapurple; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2% 0;
 }
 
 .msg textarea {
-    height: 100px;
-    font-size: 18px;
-    min-width: 300px;
+  height: 100px;
+  font-size: 18px;
+  min-width: 300px;
 }
 
 .submit-btn {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
 }

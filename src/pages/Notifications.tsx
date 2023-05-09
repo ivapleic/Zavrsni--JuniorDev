@@ -66,7 +66,6 @@ function Notifications() {
     );
   }
   
-
  return (
   <div className="notifications">
     <h1>Obavijesti</h1>

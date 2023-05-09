@@ -31,8 +31,7 @@ function AddNewNotification({ newNotification, setNewNotification, handleAddNewN
   }
 
   return (
-    <div className="add-new-notification">
-      <form onSubmit={handleNotificationSubmit}>
+      <form onSubmit={handleNotificationSubmit} className="add-new-notification">
         <label>
           Naslov:
           <input
@@ -55,7 +54,7 @@ function AddNewNotification({ newNotification, setNewNotification, handleAddNewN
         </label> */}
         <br />
         <label>
-          Text:
+          Tekst:
           <input
             type="text"
             name="text"
@@ -74,7 +73,6 @@ function AddNewNotification({ newNotification, setNewNotification, handleAddNewN
           </button>
         </div>
       </form>
-    </div>
   );
 }
 

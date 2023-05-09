@@ -46,7 +46,6 @@
   display: flex;
   flex-direction: row;
   text-align: center;
-  /* background-color: red; */
   margin-left: 20px;
 
 }
@@ -57,5 +56,5 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
+  margin: 3% 0;
 }

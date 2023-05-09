@@ -29,11 +29,32 @@
       "important": false
     },
     {
+      "id": 3,
+      "heading": "Traži se stalni zaposlenik/zaposlenica",
+      "date": "2023-04-17",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
+      "important": true
+    },
+    {
+      "id": 4,
+      "heading": "Međunarodni dan pasa",
+      "date": "2023-02-17",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
+      "important": false
+    },
+    {
+      "id": 4,
+      "heading": "Zajednička šetnja volontera",
+      "date": "2023-02-17",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
+      "important": false
+    },
+    {
       "heading": "Traži se radnica!",
-      "important": true,
-      "date": "08. 05. 2023.",
+      "important": false,
+      "date": "09. 05. 2023.",
       "text": "A ženska po mogućnosti",
-      "id": 3
+      "id": 5
     }
   ],
   "donations": [
