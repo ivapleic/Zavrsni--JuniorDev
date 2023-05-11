@@ -52,7 +52,7 @@ function ContactForm() {
           required
         />
 
-        <label htmlFor="email">Mail:</label>
+        <label htmlFor="email">Email:</label>
         <input
           type="email"
           id="email"

@@ -13,7 +13,7 @@ function AddNewDonation({
   };
 
   const handleCancel = () => {
-    setAddingNewDonation(false);
+    setAddingNewDonation(!setNewDonation);
   };
 
   return (

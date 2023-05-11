@@ -9,6 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .add-new-notification-buttons {
@@ -19,12 +20,17 @@
     justify-content: space-between;
 }
 
+
 .add-new-notification label {
     width: 100%;
     min-height: 35px;
+    font-family: "Noto Serif", serif;
 }
 
 .add-new-notification > label > input {
      min-height: 35px;
      min-width: 250px;
+     margin: 1% 2%;
+     font-size: 15px;
+     font-family: "Noto Serif", serif;
 } 

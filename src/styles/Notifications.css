@@ -38,8 +38,16 @@
 }
 
 .new-notification-btn {
-  background-color:#7dc4a4 ;
-  height: 45px;
-  width: 160px;
+  border:2px solid #7dc4a4 ;
+  background-color: white;
+  height: 50px;
+  width: 180px;
+  font-family: "Noto Serif", serif;
+  font-size: 18px;
+}
 
+.notifications > h1 {
+  padding: 0 0;
+  margin: 3% 0;
+  font-family: "Noto Serif", serif;
 }

@@ -36,7 +36,7 @@ function AboutUs() {
         <div className="contact">
           <h2>KONTAKT</h2>
           <p>
-            <b><u>Azil za životinje Beštie</u></b>
+            <b><u>Azil za životinje</u></b>
           </p>
           <p>
             <b>Adresa</b> : Vukovarska 1, 21312 Split

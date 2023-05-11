@@ -34,7 +34,17 @@ function AddNew() {
           },
         }
       );
-      console.log(response.data);
+      setNewAnimal({
+        name: "",
+        type: "",
+        years: "",
+        gender: "",
+        chip: false,
+        adopted: false,
+        image: "",
+        examination: "",
+        description: "",
+      });
     } catch (error) {
       console.error(error);
     }

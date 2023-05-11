@@ -16,10 +16,10 @@ function NavBar() {
       <div className="inner">
         <div className="nav-bar">
           <Link to="/about-us">O nama</Link>
-          <Link to="/animals">Popis</Link>
+          <Link to="/animals">Životinje</Link>
           <Link to="/donations">Donacije</Link>
           <Link to="/notifications">Obavijesti</Link>
-          {userRole === "admin" && <Link to="/add-new">Dodaj novog</Link>}
+          {userRole === "admin" && <Link to="/add-new">Dodaj životinju</Link>}
         </div>
         <div className="user-role">
             <input

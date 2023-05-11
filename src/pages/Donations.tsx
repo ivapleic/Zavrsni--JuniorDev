@@ -78,7 +78,7 @@ function Donations() {
         });
       })
       .catch((error) => console.log(error));
-    setAddingNewDonation(false);
+      setAddingNewDonation(false);
   }
 
   return (
@@ -87,8 +87,8 @@ function Donations() {
       <div className="add-new-donation">
         <h3>Od srca zahvaljujemo na podršci i na svakoj vrsti donacije ❤</h3>
         <br />
-        <button onClick={() => setAddingNewDonation(true)} className="new-donation-btn">
-          NOVA DONACIJA
+        <button onClick={() => setAddingNewDonation(!addingNewDonation)} className="new-donation-btn">
+          Nova donacija
         </button>
         {addingNewDonation ? (
           <AddNewDonation
@@ -108,10 +108,10 @@ function Donations() {
         <table className="donation-table">
           <thead>
             <tr>
-              <th>Tip</th>
-              <th>Opis</th>
-              <th>Vrijednost</th>
-              {userRole === "admin" && <th>Akcija</th>}
+              <th>TIP</th>
+              <th>OPIS</th>
+              <th>VRIJEDNOST</th>
+              {userRole === "admin" && <th>AKCIJE</th>}
             </tr>
           </thead>
 
@@ -143,10 +143,10 @@ function Donations() {
         <table className="donation-table">
           <thead>
             <tr>
-              <th>Tip</th>
-              <th>Opis</th>
-              <th>Vrijednost</th>
-              {userRole === "admin" && <th>Akcije</th>}
+              <th>TIP</th>
+              <th>OPIS</th>
+              <th>VRIJEDNOST</th>
+              {userRole === "admin" && <th>AKCIJE</th>}
             </tr>
           </thead>
           <tbody>
@@ -182,10 +182,10 @@ function Donations() {
         <table className="donation-table">
           <thead>
             <tr>
-              <th>Tip</th>
-              <th>Opis</th>
-              <th>Vrijednost</th>
-              {userRole === "admin" && <th>Akcije</th>}
+              <th>TIP</th>
+              <th>OPIS</th>
+              <th>VRIJEDNOST</th>
+              {userRole === "admin" && <th>AKCIJE</th>}
             </tr>
           </thead>
           <tbody>

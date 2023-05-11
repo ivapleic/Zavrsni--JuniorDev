@@ -42,17 +42,6 @@ function AddNewNotification({ newNotification, setNewNotification, handleAddNewN
             required
           />
         </label>
-        {/* <br />
-        <label>
-          Važno:
-          <input
-            type="checkbox"
-            name="important"
-            checked={newNotification.important}
-            onChange={handleChange}
-          />
-        </label> */}
-        <br />
         <label>
           Tekst:
           <input

@@ -51,7 +51,7 @@
     },
     {
       "heading": "Traži se radnica!",
-      "important": false,
+      "important": true,
       "date": "09. 05. 2023.",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus mauris metus, vulputate vulputate neque blandit quis. Nunc ultrices diam ligula, nec commodo purus ullamcorper id. Donec aliquet libero eu tincidunt eleifend. Duis ornare tincidunt nisl quis fringilla. Curabitur bibendum metus mauris, in bibendum lectus vestibulum tristique. Sed in nibh facilisis tortor varius euismod at et lectus. In non congue elit. Donec blandit est consequat, porta tellus eu, placerat odio.",
       "id": 5
@@ -286,7 +286,7 @@
       "description": "Voli se igrati",
       "examination": "2020-02-23",
       "adopted": true,
-      "image": "src/assets/zec2.jpg"
+      "image": "src/assets/zec5.webp"
     },
     {
       "id": 14,
@@ -298,7 +298,55 @@
       "description": "Voli mrkvu",
       "examination": "2018-02-23",
       "adopted": false,
-      "image": "src/assets/zec3.jpeg"
+      "image": "src/assets/zec4.jpeg"
+    },
+    {
+      "name": "Luna",
+      "type": "pas",
+      "years": "10",
+      "gender": "ženka",
+      "chip": true,
+      "adopted": false,
+      "image": "src/assets/pas10.jpeg",
+      "examination": "2023-05-11",
+      "description": "Vrlo umiljata",
+      "id": 15
+    },
+    {
+      "name": "Hugo",
+      "type": "pas",
+      "years": "3",
+      "gender": "mužjak",
+      "chip": true,
+      "adopted": false,
+      "image": "src/assets/pas11.jpg",
+      "examination": "2023-05-01",
+      "description": "Voli se igrat",
+      "id": 16
+    },
+    {
+      "name": "Marta",
+      "type": "mačka",
+      "years": "1",
+      "gender": "ženka",
+      "chip": false,
+      "adopted": false,
+      "image": "src/assets/macka6.jpg",
+      "examination": "2023-03-15",
+      "description": "Voli se maziti i igrati",
+      "id": 17
+    },
+    {
+      "name": "Leo",
+      "type": "mačka",
+      "years": "4",
+      "gender": "mužjak",
+      "chip": true,
+      "adopted": false,
+      "image": "src/assets/macka7.jpg",
+      "examination": "2022-12-14",
+      "description": "Voli skakati",
+      "id": 18
     }
   ]
 }

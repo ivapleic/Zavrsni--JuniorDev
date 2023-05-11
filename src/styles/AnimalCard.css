@@ -45,8 +45,10 @@ animal-img img {
 
 .animal-more-info-btn,
 .animal-delete-btn,
-.animal-adopt-btn {
-  margin: 5% 0;
+.animal-adopt-btn,
+.animal-edit-btn {
+  margin: 5% 4px;
+  background-color: white;
 }
 
 .form-add-animal {
@@ -107,10 +109,11 @@ animal-img img {
 
 .animal-more-info-btn {
   margin: 13px 7px;
+  background-color: white;
 }
 
 .animal-adopt-btn {
-  background-color: #7dc4a4;
+  background-color: #75b699;
   color: white;
   margin: 13px 7px;
 }

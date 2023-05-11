@@ -5,26 +5,22 @@
   justify-content: center;
   width: 50%;
   height: 40%;
+  margin-top: 2%;
+  padding: 1% 0;
 }
 
 .form-add-new-don {
   padding: 2% 0;
   margin-top: 5%;
-  background-color: rgba(
-    241,
-    241,
-    241,
-    0.806
-  ) !important;
-  transition: transform 0.3s ease-in-out;
   min-width: 600px;
-  min-height: 250px;
-  max-height: 380px;
+  min-height: 380px;
+  max-height: 450px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 1px solid black;
 }
 
 .type-value {
@@ -114,7 +110,7 @@ textarea {
 }
 
 .button-container {
-  margin: 2% 0;
+  padding: 2% 1%;
   width: 100%;
   display: flex;
   flex-direction: row;

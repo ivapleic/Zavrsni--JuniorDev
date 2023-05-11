@@ -36,7 +36,7 @@ function Notifications() {
     });
   }
 
-  function handleAddNewNotification(newNotificationData) {
+  function handleAddNewNotification(newNotificationData:any) {
     axios
       .post("http://localhost:3000/notifications", newNotificationData)
       .then((response) => {
