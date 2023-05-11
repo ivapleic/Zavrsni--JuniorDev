@@ -5,12 +5,6 @@
       "fullName": "Iva Pleic",
       "mail": "ipleic46@gmail.com",
       "message": "Hello World!"
-    },
-    {
-      "fullName": "Ivan Penava",
-      "mail": "ipenialoe@gmail.com",
-      "message": "A neka poruka ide ode!",
-      "id": 2
     }
   ],
   "notifications": [
@@ -85,14 +79,14 @@
       "type": "",
       "value": "4",
       "descriptiom": "",
-      "description": "zhvguh",
+      "description": ".",
       "id": 6
     },
     {
       "category": "igračke",
       "type": "",
       "value": "11",
-      "description": "as",
+      "description": ".",
       "id": 7
     },
     {
